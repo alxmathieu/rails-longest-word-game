@@ -1,0 +1,10 @@
+<div class="container"><h1>Your score</h1>
+  <h3 class = "result">Result: </h3> <p> <%= @message %> </p>
+
+  <h3 class = "score">Score</h3>
+  <p> Your score is <%= @score %> </p>
+  <p> Your total score is <%= session[:score] %> </p>
+  <br>
+  <div class="btn btn-primary restart"><%= link_to "Play again", 'new/' %></div>
+  <div class="btn btn-primary restart"> <% session[:score] = 0 %> <%= link_to "Restart", 'new/' %></div>
+</div>
