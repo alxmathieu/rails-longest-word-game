@@ -33,6 +33,9 @@ class GamesController < ApplicationController
     json = JSON.parse(response.read)
     return json['found']
   end
+
+
+
 end
 
 
